@@ -9,9 +9,9 @@
 
 <div id="deskripsi">
   <hr>
-  <h3>Deskripsi Singkat Aplikasi</h3>
-  Gighit adalah sebuah aplikasi 2in1 kasir + pelanggan dengan inovasi hemat kertas.
-  Aplikasi ini dibuat dengan menerapkan konsep Object Oriented Programming (OOP) menggunakan bahasa pemrograman Java.
+  <h3>Deskripsi Singkat Website</h3>
+  Gighit Web adalah sebuah aplikasi berbasis website 2in1 kasir + pelanggan dengan inovasi hemat kertas.
+  Framework utama yang digunakan untuk mengembangkan website ini adalah Laravel dan Livewire.
 </div>
 
 <div id="latar-belakang">
@@ -39,9 +39,9 @@
   Gighit hadir sebagai solusi untuk permasalahan diatas. Aplikasi ini memiliki potensi atau 
   kemampuan sebagai berikut :
   <ol>
-    <li>Satu aplikasi dapat digunakan oleh kasir dan pelanggan sekaligus.</li>
-    <li>Meringankan modal yang tadinya digunakan untuk 2 aplikasi, dipersingkat menjadi 1 aplikasi saja.</li>
-    <li>Memudahkan perawatan aplikasi restoran (fokus pada 1 aplikasi saja).</li>
+    <li>Satu website dapat digunakan oleh kasir dan pelanggan sekaligus.</li>
+    <li>Meringankan modal pengembangan web yang tadinya digunakan untuk 2 website, dipersingkat menjadi 1 website saja.</li>
+    <li>Memudahkan perawatan website restoran (fokus pada 1 website saja).</li>
     <li>Menawarkan 2 cara dalam pemberian struknya kepada pelanggan. Yaitu melalui email dan cetak menggunakan kertas.</li>
     <li>Hemat Kertas.</li>
     <li>Mengikuti era Revolusi Industri 4.0 serba elektronik.</li>
