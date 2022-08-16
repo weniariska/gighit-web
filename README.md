@@ -10,7 +10,7 @@
 <div id="deskripsi">
   <hr>
   <h3>Deskripsi Singkat Website</h3>
-  Link Website : http://gighit.000webhostapp.com/
+  Link Website : http://gighit.000webhostapp.com/ <br>
   Gighit Web adalah sebuah aplikasi berbasis website 2in1 kasir + pelanggan dengan inovasi hemat kertas.
   Gighit Web ini adalah versi website dari aplikasi gighit yang dibuat dengan bahasa pemrograman Java sebelumnya.
   Framework utama yang digunakan untuk mengembangkan website ini adalah Laravel dan Livewire.
