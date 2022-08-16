@@ -1,4 +1,4 @@
-<img width="100%" alt="image" src="https://user-images.githubusercontent.com/96558726/179160033-f1afa2ca-dbfe-4e2c-93a3-94a5b4bea515.png">
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/96558726/184819741-5e3ee0c1-b58d-46c5-a000-9c827fb09304.png">
 
 <nav>
   <a href="#deskripsi">Deskripsi</a> |
