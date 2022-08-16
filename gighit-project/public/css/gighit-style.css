@@ -1,0 +1,964 @@
+/* general */
+body {
+    user-select: none;
+    font: normal normal 500 15px "Quicksand";
+}
+* {
+    box-sizing: border-box;
+}
+
+/* button link */
+.div-btn {
+    text-align: center;
+}
+button:hover,
+a:hover,
+.div-btn:hover {
+    cursor: grab;
+}
+button:active,
+a:active,
+.div-btn:active {
+    cursor: grabbing;
+}
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font: normal normal 500 15px "Quicksand";
+}
+a {
+    text-decoration: none;
+}
+.btn-underline {
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    padding: 10px 0;
+    transition: 0.5s;
+}
+.btn-underline:hover {
+    border-bottom: 2px solid black;
+}
+.btn-white {
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    width: 100%;
+}
+.btn-white:hover {
+    background-color: black;
+    color: white;
+}
+.btn-black {
+    padding: 10px 22px;
+    background-color: black;
+    color: white;
+}
+.btn-black:hover {
+    background-color: rgb(46, 80, 131);
+}
+
+/* padding */
+.pad-10 {
+    padding: 10px;
+}
+.pad-20 {
+    padding: 20px;
+}
+.left-pad {
+    padding: 20px 30px;
+    text-align: left;
+}
+.pad-center {
+    padding: 10px 0;
+    text-align: center;
+}
+.mar-btm-10 {
+    margin-bottom: 10px;
+}
+.border-20 {
+    border-radius: 20px;
+}
+.font-20 {
+    font: normal normal 600 20px "Quicksand";
+}
+.abs-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.align-left {
+    text-align: left;
+}
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
+.width-100 {
+    width: 100%;
+}
+.height-400 {
+    height: 400px;
+}
+.max-height-220 {
+    max-height: 220px;
+}
+
+/* display */
+.disNone,
+.disNone > * {
+    display: none;
+}
+.dis-flex {
+    display: flex;
+}
+.dis-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.dis-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 100%;
+    height: 40px;
+    padding: 5px 15px;
+    margin: 10px 0;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 15px;
+    background-color: white;
+}
+/* end general */
+
+/* nav */
+/* navbar logo */
+nav {
+    height: 80px;
+}
+@keyframes animasiLogo {
+    0% {
+        letter-spacing: normal;
+    }
+    50% {
+        letter-spacing: 4px;
+    }
+    100% {
+        letter-spacing: normal;
+    }
+}
+.navbar .logo {
+    font: normal normal 700 25px "Quicksand";
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.navbar .logo:hover {
+    animation: animasiLogo 1s infinite;
+}
+/* end logo */
+
+/* navbar button */
+.navbar {
+    height: 80px;
+    position: fixed;
+    background-image: url(../images/bg/marble.jpg);
+    padding: 0 5vw;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.btn-kiri * {
+    margin-right: 2vw;
+}
+.btn-kanan * {
+    margin-left: 2vw;
+}
+
+/* dropdown */
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    background-image: url(../images/bg/marble.jpg);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content * {
+    display: block;
+    padding: 15px;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+/* end dropdown */
+
+/* toggle */
+.small-resp {
+    display: none;
+}
+.toggle-btn {
+    width: 35px;
+    height: 30px;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+.toggle-btn div {
+    background-color: black;
+    height: 3px;
+    width: 25px;
+}
+.toggle-btn:hover {
+    border: 2px solid black;
+}
+.parentDisable {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 99998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+.toggle-div {
+    background-image: url(../images/bg/marble.jpg);
+    position: absolute;
+    z-index: 99999;
+    width: 400px;
+    height: 100%;
+    right: 0;
+    transition: 1s;
+}
+.tittle-close {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+.tittle-close .close {
+    width: 35px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.hide,
+.hide > * {
+    width: 0;
+}
+input[type="radio"] {
+    width: 15px;
+    display: inline;
+}
+.radiodiv {
+    background-color: aqua;
+}
+.containerRadio {
+    background-color: burlywood;
+}
+/* end toggle-div */
+/* end navbar button */
+
+/* header header header header header header header header header */
+.headerImg {
+    height: 500px;
+    position: relative;
+    background-image: url(../images/bg/pizzaHead.jpg);
+}
+.trans-black {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.trans-black .big-text {
+    margin: auto;
+    font: normal normal 700 53px/130% "Quicksand";
+}
+.trans-black .big-text span {
+    display: block;
+    margin-top: 10px;
+    font: normal normal 400 17px "Quicksand";
+}
+/* end header */
+
+/* section section sectionsectionsection sectionsectionsection */
+section {
+    min-height: 590px;
+    background-image: url(../images/bg/marble.jpg);
+}
+.judul {
+    text-align: center;
+    padding: 25px 0;
+}
+.judul span {
+    width: 20px;
+}
+.judul::before,
+.judul::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid black;
+    margin: auto;
+}
+
+/* menu */
+.kontainer-menu {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    justify-content: center;
+}
+.menu {
+    width: 250px;
+    height: 290px;
+    box-sizing: border-box;
+    margin: 10px 1%;
+    margin: 0 1.5% 45px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s;
+}
+.menu:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(33, 96, 148, 0.8) 0px 5px 15px;
+}
+.img-style {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+}
+.img-pizza {
+    top: 0;
+}
+.desc-style {
+    width: 180px;
+    margin: auto;
+    text-align: center;
+    color: rgba(0, 0, 0, 0);
+    padding: 5px;
+}
+.blHover {
+    position: absolute;
+    font-weight: 300;
+    width: 100%;
+    height: 170px;
+    color: white;
+    display: flex;
+    transition: 0.5s;
+}
+.blHover:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.blHover:hover .desc-style {
+    color: white;
+}
+.name-style {
+    margin: 180px 25px 0;
+    text-align: center;
+    max-width: 200px;
+}
+.divPrice {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+.spanNol {
+    font-size: 12px;
+}
+.btnAdd {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    box-sizing: border-box;
+}
+/* end menu */
+
+/* footer */
+footer {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font: normal normal 500 18px "Quicksand";
+}
+footer .sosmed {
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.sosmed div {
+    display: flex;
+    margin: auto;
+}
+.sosmed div p {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sosmed div p img {
+    width: 50px;
+    margin-bottom: 30px;
+}
+.sosmed div p span {
+    margin-top: 10px;
+    font: normal normal 300 15px "Quicksand";
+    color: rgba(255, 255, 255, 0.7);
+}
+.sosmed div p span a {
+    color: rgba(255, 255, 255, 0.7);
+}
+.sosmed div p span a:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0);
+}
+.love {
+    background-color: black;
+}
+
+/* alert */
+.alert {
+    z-index: 99999;
+    text-align: center;
+    background-color: white;
+    width: 330px;
+    height: 165px;
+    display: grid;
+    grid-template-areas:
+        "alert-title alert-title"
+        "kosong kosong"
+        "alert-desc alert-desc"
+        "alert-btnKiri alert-btnKanan";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 55px 10px 45px 55px;
+    overflow: hidden;
+}
+.alert > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alert .alert-title {
+    grid-area: alert-title;
+    align-items: flex-end;
+}
+.alert .alert-desc {
+    grid-area: alert-desc;
+    align-items: flex-start;
+}
+.alert .alert-btnKiri {
+    grid-area: alert-btnKiri;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.alert .alert-btnKanan {
+    grid-area: alert-btnKanan;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+}
+.alert1 {
+    z-index: 99999;
+    background-color: white;
+    height: 90px;
+    width: fit-content;
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 0 0 30px;
+}
+.alert1 .alert1-btnClose {
+    border-left: 2px solid grey;
+    margin-left: 30px;
+    width: 50px;
+    height: 90px;
+    font-weight: 700;
+}
+.alert-success {
+    background-color: rgb(127, 212, 127);
+}
+.alert-failed {
+    background-color: rgb(224, 98, 98);
+}
+.alert-input {
+    z-index: 99999;
+    text-align: center;
+    background-color: white;
+    width: 330px;
+    height: 165px;
+    display: grid;
+    grid-template-areas:
+        "alert-title alert-title alert-title alert-title"
+        "kosong alert-inputText alert-inputText kosong2"
+        "alert-btnKiri alert-btnKiri alert-btnKanan alert-btnKanan";
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 50px 60px 55px;
+    overflow: hidden;
+}
+.alert-input > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alert-input .alert-title {
+    grid-area: alert-title;
+    align-items: flex-end;
+}
+.alert-input .alert-inputText {
+    grid-area: alert-inputText;
+    justify-content: flex-start;
+}
+.alert-input .alert-btnKiri {
+    grid-area: alert-btnKiri;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.alert-input .alert-btnKanan {
+    grid-area: alert-btnKanan;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+/* div-white */
+.div-white {
+    margin: auto;
+    background-color: white;
+    color: black;
+    width: 600px;
+    padding: 50px 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.div-white > * {
+    margin: auto;
+}
+.div-white .text-title {
+    width: 80%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.div-white .text2 {
+    width: 70%;
+}
+
+/* side-main */
+.kontainer-side-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.div-side {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.div-main {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    background-color: white;
+    padding: 30px;
+}
+.kontainer-side {
+    width: 33%;
+}
+.kontainer-main {
+    width: 65%;
+}
+
+/* table */
+table {
+    width: 100%;
+}
+.table-style {
+    text-align: center;
+}
+.table-style thead {
+    font-weight: 700;
+    border: 1px solid grey;
+}
+.table-style td {
+    padding: 10px 5px;
+    border-bottom: 1px solid grey;
+}
+.tableFixHead {
+    overflow-y: auto;
+}
+.tableFixHead table {
+    border-collapse: separate;
+    width: 100%;
+    text-align: center;
+}
+.tableFixHead thead th {
+    background: rgb(20, 20, 20);
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 15px 5px;
+}
+.tableFixHead thead th {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.tableFixHead thead th:first-child {
+    border-left: 1px solid black;
+}
+.tableFixHead thead th:last-child {
+    border-right: 1px solid black;
+}
+.tableFixHead tbody tr:not(:last-child) td {
+    border-bottom: 1px solid grey;
+}
+.tableFixHead td {
+    padding: 10px 5px;
+}
+.table-side-input {
+    margin-top: 20px;
+}
+.table-side-input tr:not(:last-child) div {
+    padding-bottom: 20px;
+}
+.table-side-input tr div input {
+    margin-top: 0;
+}
+
+/* ACCOUNT */
+.acc-side-menu {
+    padding: 20px 0;
+}
+.acc-side-menu .accPict,
+.acc-side-menu .accNama,
+.acc-side-menu .accSaldo {
+    margin: 0 auto 10px;
+}
+.acc-side-menu .accPict {
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/bg/pizzaPict.jpg);
+}
+.acc-side-menu .accNama,
+.acc-side-menu .accSaldo {
+    width: 80%;
+}
+.acc-side-menu .saldo {
+    font-weight: normal;
+}
+.acc-side-menu button {
+    padding: 10px 20px;
+}
+.acc-main-profile table tr td:first-child {
+    width: 150px;
+}
+
+/* cart */
+.cart-main table {
+    border-spacing: 20px;
+    border-collapse: separate;
+}
+.cart-main table td {
+    border: 1px solid grey;
+    padding: 20px 5%;
+    display: grid;
+    grid-template-areas:
+        "image kosong1 kosong1"
+        "image name name"
+        "image price price"
+        "kosong kosong kosong"
+        "total total button";
+    grid-auto-columns: 120px 1fr 110px;
+    grid-auto-rows: 0.2fr 1fr 0.5fr 10px 0.5fr;
+}
+.cart-main table td div {
+    display: flex;
+}
+.cart-image {
+    grid-area: image;
+}
+.cart-image img {
+    width: 100px;
+    height: fit-content;
+}
+.cart-name {
+    grid-area: name;
+    align-items: flex-start;
+}
+.cart-price {
+    grid-area: price;
+    align-items: center;
+}
+.cart-total {
+    grid-area: total;
+    align-items: center;
+    border-top: 1px solid black;
+    padding: 10px 15px 0;
+    padding: 10px 0 0 20px;
+}
+.cart-button {
+    grid-area: button;
+    align-items: flex-end;
+    border-top: 1px solid black;
+    padding: 10px 20px 0 0;
+}
+.btn-plus,
+.btn-min {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.btn-plus {
+    background-color: black;
+    color: white;
+}
+.btn-min {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.cart-qty {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ACCOUNT NOT SIGN */
+.relKontainer,
+.sign {
+    min-height: 590px;
+    display: flex;
+    padding: 45px 0;
+}
+.relKontainer .div-white > * {
+    padding: 20px 0;
+}
+.relKontainer a {
+    display: inline;
+}
+
+/* SIGNIN */
+.sign .div-white div {
+    width: 65%;
+    margin: 10px auto;
+}
+.sign .div-white div > * {
+    width: 100%;
+}
+.inputInvalid {
+    border-color: red;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: -10px;
+}
+.underline {
+    border-top: 2px solid black;
+}
+
+/* order admin */
+.div-dashboard {
+    background-color: white;
+    height: 150px;
+}
+#cart table {
+    margin-top: 10px;
+}
+.dis-flex-center {
+    display: flex;
+    justify-content: center;
+}
+.itemAdminCart {
+    display: grid;
+    grid-template-areas:
+        "namead namead"
+        "qtyad subad";
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 1fr 30px;
+}
+.itemAdminCart > * {
+    display: flex;
+    align-items: center;
+}
+.namead {
+    grid-area: namead;
+    justify-content: flex-start;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.pricead {
+    grid-area: pricead;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.qtyad {
+    grid-area: qtyad;
+    padding-left: 10px;
+}
+.qtyad .btn-min,
+.qtyad .btn-plus,
+.qtyad .cart-qty {
+    height: 15px;
+    border-radius: 0;
+    width: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.subad {
+    /* background-color: darkcyan; */
+    grid-area: subad;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.checkout tr td:first-child {
+    width: 30%;
+}
+.checkout tr td:last-child {
+    width: 70%;
+}
+.checkout input {
+    color: black;
+}
+.gigpay-side div {
+    margin: auto;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.gigpay-main div {
+    margin: auto;
+}
+
+.receipt {
+    z-index: 99999;
+    text-align: center;
+    background-color: white;
+    width: 330px;
+    height: 600px;
+    font-size: 13px;
+    font-weight: 600;
+    overflow: auto;
+}
+.receipt > div:not(:first-child) {
+    width: 100%;
+    padding: 10px 12px;
+    border-top: 1px dashed black;
+}
+.gigLogo {
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+    font: normal normal 700 30px "Quicksand";
+    letter-spacing: 3px;
+    padding: 20px 0;
+}
+.gigDesc {
+    /* background-color: lightcoral; */
+    padding: 8px 0;
+}
+.gigName {
+    padding: 8px 10px;
+    text-align: left;
+}
+.items-price > div {
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.sectionReceipt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-wrap {
+    height: 50px;
+    position: relative;
+}
+input[type="file"] {
+    font-size: 17px;
+    color: #b8b8b8;
+    z-index: 1;
+    left: 0;
+}
+.button {
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    padding: 10px 37px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: black;
+    color: #fff;
+}
+
+#home .menu {
+    height: 285.71px;
+    width: 250;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 780px) {
+    .width-resp {
+        display: none;
+    }
+    .small-resp {
+        display: unset;
+    }
+    .trans-black .big-text {
+        font: normal normal 700 6.4vw/130% "Quicksand", cursive;
+    }
+    .trans-black .big-text span {
+        font: normal normal 400 2.1vw/130% "Quicksand", cursive;
+    }
+    .kontainer-side-main {
+        flex-direction: column;
+    }
+    .kontainer-side,
+    .kontainer-main,
+    .gigpay-side,
+    .gigpay-main {
+        width: 100%;
+    }
+    .kontainer-side,
+    .kontainer-main {
+        margin-bottom: 20px;
+    }
+
+    .acc-main-profile,
+    .acc-main-transaction {
+        width: 100%;
+    }
+    .div-white {
+        width: 80%;
+    }
+    .banner img:last-child {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 781px) {
+    #allMenu {
+        display: none;
+    }
+}
