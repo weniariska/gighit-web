@@ -94,9 +94,7 @@
     </li>
     <li>
       Halaman Menu Drinks <br>
-      <img width="298" alt="image" src="https://user-images.githubusercontent.com/96558726/184824261-6afae8fe-84c5-41fd-b620-be26dba13c07.png">
-
-      <img width="85%" alt="image" src="https://user-images.githubusercontent.com/96558726/184824261-6afae8fe-84c5-41fd-b620-be26dba13c07.png"><br><br>
+      <img width="50%" alt="image" src="https://user-images.githubusercontent.com/96558726/184824261-6afae8fe-84c5-41fd-b620-be26dba13c07.png"><br><br>
     </li>
     <li>
       Halaman Menu Starters <br>
