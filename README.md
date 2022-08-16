@@ -78,19 +78,19 @@
   <ul>
     <li>
       Halaman Login <br>
-      <img width="85%" alt="image" src="https://user-images.githubusercontent.com/96558726/184822837-223f15aa-7f0f-4bce-bd6a-66fe0dac67aa.png"> <br>
+      <img width="50%" alt="image" src="https://user-images.githubusercontent.com/96558726/184822837-223f15aa-7f0f-4bce-bd6a-66fe0dac67aa.png"> <br>
     </li>
     <li>
       Halaman Sign Up <br>
-      <img width="85%" alt="image" src="https://user-images.githubusercontent.com/96558726/184823115-b8837b85-2ca8-4a3c-8d45-e462194c6927.png"><br><br>
+      <img width="50%" alt="image" src="https://user-images.githubusercontent.com/96558726/184823115-b8837b85-2ca8-4a3c-8d45-e462194c6927.png"><br><br>
     </li>
     <li>
       Halaman Home <br>
-      <img width="85%" alt="image" src="https://user-images.githubusercontent.com/96558726/184823738-1402e120-05c4-43b7-8f87-3526a5b03ec0.png"><br><br>
+      <img width="50%" alt="image" src="https://user-images.githubusercontent.com/96558726/184823738-1402e120-05c4-43b7-8f87-3526a5b03ec0.png"><br><br>
     </li>
     <li>
       Halaman Menu Pizza <br>
-      <img width="85%" alt="image" src="https://user-images.githubusercontent.com/96558726/184824003-14725ffa-f5c8-40f3-a4a6-608325a38f95.png"> <br><br>
+      <img width="50%" alt="image" src="https://user-images.githubusercontent.com/96558726/184824003-14725ffa-f5c8-40f3-a4a6-608325a38f95.png"> <br><br>
     </li>
     <li>
       Halaman Menu Drinks <br>
@@ -100,19 +100,19 @@
     </li>
     <li>
       Halaman Menu Starters <br>
-      <img width="85%" alt="image" src="https://user-images.githubusercontent.com/96558726/184824564-c1fb7e72-ca19-4313-b5fb-e1e5fd48e88e.png"><br><br>
+      <img width="50%" alt="image" src="https://user-images.githubusercontent.com/96558726/184824564-c1fb7e72-ca19-4313-b5fb-e1e5fd48e88e.png"><br><br>
     </li>
     <li>
       Menu Cart (Pelanggan) <br>
-      <img width="85%" alt="image" src="https://user-images.githubusercontent.com/96558726/184826108-9f188b12-899f-427a-99bf-0ac47cc3a1f3.png"><br>
+      <img width="50%" alt="image" src="https://user-images.githubusercontent.com/96558726/184826108-9f188b12-899f-427a-99bf-0ac47cc3a1f3.png"><br>
       Menu Cart (Guest) <br>
-      <img width="85%" alt="image" src="https://user-images.githubusercontent.com/96558726/184827084-3b24bd8a-eed8-42ec-a3e2-704923df9de8.png"><br><br>
+      <img width="50%" alt="image" src="https://user-images.githubusercontent.com/96558726/184827084-3b24bd8a-eed8-42ec-a3e2-704923df9de8.png"><br><br>
     </li>
     <li>
       Halaman Customer account <br>
-      <img width="85%" alt="image" src="https://user-images.githubusercontent.com/96558726/184827595-550bb194-6024-44b5-9a52-50e117fda21f.png"><br>
+      <img width="50%" alt="image" src="https://user-images.githubusercontent.com/96558726/184827595-550bb194-6024-44b5-9a52-50e117fda21f.png"><br>
       Halaman Menu Riwayat Order Pelanggan <br>
-      <img width="85%" alt="image" src="https://user-images.githubusercontent.com/96558726/184827845-c79453b3-c649-47d3-bc22-13ff552bff65.png"><br><br>
+      <img width="50%" alt="image" src="https://user-images.githubusercontent.com/96558726/184827845-c79453b3-c649-47d3-bc22-13ff552bff65.png"><br><br>
     </li>
     <li>
       Struk yang dihasilkan mode pelanggan memiliki kode <br>
@@ -126,6 +126,6 @@
       Halaman Topup <br>
       <img width="50%" alt="image" src="https://user-images.githubusercontent.com/96558726/184829222-c1d3da3b-39b8-4576-84d4-bd6650594cff.png">
     </li>
-    Untuk lebih lengkap, dapat kunjungi web http://gighit.000webhostapp.com/
   </ul>
+  Untuk lebih lengkap, dapat kunjungi web http://gighit.000webhostapp.com/
 </div>
